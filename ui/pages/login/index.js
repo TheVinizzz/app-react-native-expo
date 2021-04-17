@@ -1,13 +1,16 @@
-import React from 'react';
-import {Image, ScrollView, StyleSheet, Text, View} from 'react-native';
+import React, {useState} from 'react';
+import {Image, ScrollView, StyleSheet, Text, View, TextInput} from 'react-native';
 import IconLogin from "../../assets/login/iconLogin.png"
-import {Container, IconLoginTag} from "./style"
+import {Container, IconLoginTag, InputLogin} from "./style"
 
 export default function LoginPage() {
+ const [text, onChangeText] = React.useState("Login");
+ const [password, onChangePassword] = React.useState("Senha");
     return (
         <Container>
             <IconLoginTag source={IconLogin}/>
-            <Text>Aparece Poha</Text>
+            <InputLogin onChangeText={onChangeText} value={text}/>
+            <InputLogin onChangeText={onChangePassword} value={password}/>
         </Container>
     );
 }

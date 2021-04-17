@@ -6,7 +6,7 @@ export const Container = styled.View`
   height: 100%;
   width: 100%;
   background-color: #004295;
-  padding-top: 15%;
+  padding-top: 45%;
 `;
 
 export const IconLoginTag = styled.Image`
@@ -23,4 +23,12 @@ export const InputLogin = styled.TextInput`
   border-radius: 10px;
   margin: 10px;
   border-width: 1px;
+`;
+
+export const ButtonLogin = styled.Button`
+  
+`;
+
+export const ContainerButton = styled.View`
+  margin-top: 10px;
 `;
